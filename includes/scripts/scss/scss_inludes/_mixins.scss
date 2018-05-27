@@ -1,0 +1,54 @@
+@function strip-unit($num) {
+    @return $num / ($num * 0 + 1);
+}
+
+@mixin hoverify($property, $colorin){
+    #{$property}:darken($colorin,15%);
+}
+
+@mixin fs-px2rem($basefontsize, $property, $params...) {
+    $max: length($params);
+    $pxValues: '';
+    $remValues: '';
+    @for $i from 1 through $max {
+      $param: nth($params, $i);
+      @if type-of($param) == number and (unit($param) == rem or unitless($param)){
+          $value: strip-unit($param);
+          $pxValues: #{$pxValues + $value}px;
+          $remValues: #{$remValues + $value/$basefontsize}rem;
+      }@else{
+          $pxValues: #{$pxValues + $param};
+          $remValues: #{$remValues + $param};
+      }
+      @if $i < $max {
+        $pxValues: #{$pxValues + " "};
+        $remValues: #{$remValues + " "};
+      }
+    }
+    #{$property}: $pxValues;
+    #{$property}: $remValues;
+}
+
+@mixin fs-rem2px($basefontsize, $property, $params...) {
+    $max: length($params);
+    $pxValues: '';
+    $remValues: '';
+    @for $i from 1 through $max {
+      $param: nth($params, $i);
+      @if type-of($param) == number and (unit($param) == rem or unitless($param)){
+          $value: strip-unit($param);
+          $pxValues: #{$pxValues + $value*$basefontsize}px;
+          $remValues: #{$remValues + $value}rem;
+      }@else{
+          $pxValues: #{$pxValues + $param};
+          $remValues: #{$remValues + $param};
+      }
+      @if $i < $max {
+        $pxValues: #{$pxValues + " "};
+        $remValues: #{$remValues + " "};
+      }
+    }
+    #{$property}: $pxValues;
+    #{$property}: $remValues;
+}
+
