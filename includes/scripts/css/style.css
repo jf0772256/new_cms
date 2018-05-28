@@ -10,4 +10,4 @@
 * Callout scss to css to include style from getbootstrap.com
 */.callout{border:1px solid gray;border-left:2px;border-radius:2px;padding:15px}.callout-small{padding:8px}.callout-large{padding:25px}.callout-danger{border-left-color:#dc3545}.callout-danger h4{color:#921925}.callout-warning{border-left-color:#ffc107}.callout-warning h4{color:#a07800}.callout-primary{border-left-color:#007bff}.callout-primary h4{color:#004a99}.callout-success{border-left-color:#28a745}.callout-success h4{color:#145523}.callout-info{border-left-color:#17a2b8}.callout-info h4{color:#0c525d}.callout-secondary{border-left-color:#6c757d}.callout-secondary h4{color:#3d4246}/*!
 * Creates a glow effect on items where glow is 
-*/.glow{box-shadow:0}
+*/.glow{box-shadow:0;border:1px solid #262626;border:.0625rem solid #262626}

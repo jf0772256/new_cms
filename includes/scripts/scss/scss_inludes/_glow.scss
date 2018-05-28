@@ -4,4 +4,5 @@
 
 .glow {
     box-shadow: 0;
+    @include fs-px2rem(16,'border',1,solid,'#262626');
 }
