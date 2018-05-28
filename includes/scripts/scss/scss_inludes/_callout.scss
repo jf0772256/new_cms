@@ -14,38 +14,38 @@
     padding: 25px;
 }
 .callout-danger{
-    border-left-color:#dc3545;
+    border-left-color:#{$jf_danger};
     h4{
-        color: darken(#dc3545, 20%);
+        color: darken($jf_danger, 20%);
     }
 }
 .callout-warning{
-    border-left-color: #ffc107;
+    border-left-color: #{$jf_warning};
     h4{
-        color: darken(#ffc107, 20%);
+        color: darken($jf_warning, 20%);
     }
 }
 .callout-primary{
-    border-left-color: #007bff;
+    border-left-color: #{$jf_primary};
     h4{
-        color: darken(#007bff, 20%);
+        color: darken($jf_primary, 20%);
     }
 }
 .callout-success{
-    border-left-color: #28a745;
+    border-left-color: #{$jf_success};
     h4{
-        color: darken(#28a745, 20%);
+        color: darken($jf_success, 20%);
     }
 }
 .callout-info{
-    border-left-color: #17a2b8;
+    border-left-color: #{$jf_info};
     h4{
-        color: darken(#17a2b8, 20%);
+        color: darken($jf_info, 20%);
     }
 }
 .callout-secondary{
-    border-left-color: #6c757d;
+    border-left-color: #{$jf_secondary};
     h4{
-        color: darken(#6c757d, 20%);
+        color: darken($jf_secondary, 20%);
     }
 }
