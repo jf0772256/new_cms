@@ -55,19 +55,18 @@
             "first":"Jesse",
             "last":"Fender"
         },
-        "written_on":"",
-        "copy_info":"",
-        "licence_info":"",
+        "written_on":"2015-2016(old), 2018-current(new)",
+        "copy_info":"&copy;2018 ",
+        "licence_info":"Open to all users, may reproduce for free, source code is open and free to be updated, if you have suggestions or improvements complete a pull request to, You may not however resell this application even if rebranded, or modify developer infromation in this settings file.",
         "contact_info":{
-            "email":"",
-            "phone":"",
+            "email":"jessefender@jessefender.com",
             "mail":{
-                "mailing1":"",
+                "mailing1":"3050 W Farm Rd",
                 "mailing2":"",
-                "city":"",
-                "state":"",
-                "zip":"",
-                "country":""
+                "city":"Springfield",
+                "state":"MO",
+                "zip":"65807",
+                "country":"USA"
             }
         }
     },
