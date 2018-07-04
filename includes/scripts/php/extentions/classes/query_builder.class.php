@@ -13,7 +13,7 @@ class Builder{
     /**
      * Starts the creation of of a select query statement
      *
-     * @param string $columns comma separated values of the column names to select.
+     * @param array $columns comma separated values of the column names to select.
      * @return object
      */
     public function select($columns){
@@ -32,7 +32,7 @@ class Builder{
     /**
      * Adds Where clause to the query
      *
-     * @param string $values String of comma separated values
+     * @param string $values Where clause values
      * @return object
      */
     public function where($values){
@@ -93,7 +93,7 @@ class Builder{
      *
      * @param string $type what is being dropped
      * @param array $options Array of values should be formatted in the following way: ["temporary"=>true,"ifexists"=>false,...] to ensure proper use in the statement.
-     * @param string $values Comma separated string of values to drop
+     * @param array $values Comma separated string of values to drop
      * @return void
      */
     public function drop($type,$options=[],$values){
@@ -115,10 +115,17 @@ class Builder{
      * builds a create statement
      *
      * @param string $tableName The new table name to create
-     * @param string $values comma separated value of the columns to create - may make this broken out.
+     * @param array $values The columns to create
      * @return object
      */
     public function create($tableName,$values){
+        //
+    }
+
+    private function do_extract_array($inarray,$separator){
+        //
+    }
+    private function do_extract_assoc($inarray,$separator,$use_keys_as_values=false){
         //
     }
 }
