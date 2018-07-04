@@ -22,7 +22,9 @@
                     "account":"",
                     "passcode":""
                 }
-            }
+            },
+            "site_title":"",
+            "site_tagline":""
         },
         "production":{
             "istype":"prod",
@@ -46,7 +48,9 @@
                     "account":"",
                     "passcode":""
                 }
-            }
+            },
+            "site_title":"",
+            "site_tagline":""
         }
     },
     "using":"dev",
@@ -72,8 +76,8 @@
     },
     "web_admin":{
         "name":{
-            "first":"Jesse",
-            "last":"Fender"
+            "first":"",
+            "last":""
         },
         "contact_info":{
             "email":"",
